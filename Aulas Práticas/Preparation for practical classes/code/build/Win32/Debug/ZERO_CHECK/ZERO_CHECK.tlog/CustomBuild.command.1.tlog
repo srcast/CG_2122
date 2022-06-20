@@ -1,0 +1,10 @@
+^C:\USERS\RICAR\ONEDRIVE\AMBIENTE DE TRABALHO\PREPARATION FOR PRACTICAL CLASSES\CODE\BUILD\CMAKEFILES\7D13B1B2E7181D03CF6FE6BC260DFAD8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/ricar/OneDrive/Ambiente de Trabalho/Preparation for practical classes/code" "-BC:/Users/ricar/OneDrive/Ambiente de Trabalho/Preparation for practical classes/code/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/ricar/OneDrive/Ambiente de Trabalho/Preparation for practical classes/code/build/class1.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
